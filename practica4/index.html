@@ -6,8 +6,10 @@
     <title>Practica 4</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="main.css">
+  </head>
 <body>
+  <!--menu section-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img class="rounded-circle" src="img/profile.jpg" width="40px">
@@ -22,14 +24,15 @@
               <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Acceso</a>
+              <!-- Button trigger modal -->
+              <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Acceso</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Acceso</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
@@ -44,6 +47,7 @@
         </div>
     </nav>
 
+    <!--sección container-->
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -51,13 +55,13 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="img/profile.jpg" class="d-block w-100" alt="...">
+                        <img src="img/profile.jpg" class="d-block sz" id="xxx" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="https://www.bing.com/images/search?view=detailV2&ccid=PhUJ5hJs&id=667FEABE9BF448EE9CEE6447EDAA130B303615B2&thid=OIP.PhUJ5hJsETgdu_J-vnvYrAHaNK&mediaurl=https%3A%2F%2Fwallpapersite.com%2Fimages%2Fwallpapers%2Fparrots-1440x2560-love-birds-wings-hd-4k-1748.jpg&exph=2560&expw=1440&q=images+birds&simid=608004989489710863&ck=1215F1366F0D4610EEE4C532291F17FB&selectedindex=2&form=IRPRST&ajaxhist=0&vt=0&sim=11" class="d-block w-100" alt="...">
+                        <img src="img/profile.jpg" class="d-block sz" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="https://www.bing.com/images/search?view=detailV2&ccid=xahqnT%2F%2B&id=78632C7DAB26715FA2FB8E5CC9A3861C4C06E556&thid=OIP.xahqnT_-9tDtFe_0qHJB0AHaFj&mediaurl=https%3A%2F%2Fwww.wallpapers13.com%2Fwp-content%2Fuploads%2F2016%2F07%2FBird-Desktop-Wallpaper-Beautiful-Cardinal-Bird-1920x1440.jpg&exph=1440&expw=1920&q=images+birds&simid=608037180344896109&ck=8FE9F698E53A32CDD26AC75A193229EE&selectedindex=6&form=IRPRST&ajaxhist=0&vt=0&sim=11" class="d-block w-100" alt="...">
+                        <img src="img/profile.jpg" class="d-block sz" alt="...">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -111,6 +115,46 @@
         </ul>
     </nav>
 
+    <!--sección footer-->
+    <footer class=" text-center bg-dark text-white py-4 fixed-bottom">
+      Copyrigth &copy; mi sitio
+  </footer>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Regístrate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
