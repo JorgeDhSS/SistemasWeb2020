@@ -1,0 +1,29 @@
+Narración de los echos!
+
+1. Instalar un cliente de Git, por ejemplo:
+ https://git-scm.com/downloads
+2. Arrancar vscode y observar si el control de cambios ctrl+shift+g nos reconoce la existencia de nuestros repositorios.
+   Eso siempre y cuando tengamos un repositorio. En caso contrario habrá que iniciarlizar un repositorio.
+
+3. Ir a la pagina de github y copiar la dirección de nuestro repositorio y clonarlo
+  git clone https://url_del_repo
+4. Entrar a vscode y cargar nuestro proyecto y listo trabajar con los comandos
+  commit y push
+
+  Nota:
+
+  - puede que vscode nos pida nuestra contraseña o nos vincule las extesiones de github a nuestra cuenta mediante un token.
+
+Comandos rapidos para interactuar con github
+1. clonar 
+  git clone https://url_del_repo
+2. agregar cambios 
+  git add . 
+3. borrar cambios   
+  git rm .
+3. hacer el commit o aceptar los cambios 
+  git commit -m "mensaje descritivo"
+4. hacer push o subir los cambios 
+  git push
+5. obtener cambios en el repositorio
+  git fetch
