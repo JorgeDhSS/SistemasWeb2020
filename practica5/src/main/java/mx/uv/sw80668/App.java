@@ -1,7 +1,9 @@
 package mx.uv.sw80668;
 
 import static spark.Spark.*;
-
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 /**
  * Hello world!
  *
@@ -31,7 +33,12 @@ public class App
         });
 
         post("/otro",(request,response)->{
-            System.out.println("prm: " + request.body());
+            JsonParser parser = new JsonParser();
+            JsonElement arbol = parser.parse(request.body());
+            JsonObject peticion = arbol.getAsJsonObject();
+
+            System.out.println("prm: " + peticion.get("PrtEmail"));
+            System.out.println("prm: " + peticion.get("PrtPassword"));
             return "algo";
         });
     }
