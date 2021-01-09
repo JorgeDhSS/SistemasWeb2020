@@ -59,7 +59,7 @@
                 </descriptorRefs>
                 <archive>
                     <manifest>
-                        <mainClass>mx.uv.heroku.app</mainClass>
+                        <mainClass>mx.uv.heroku.App</mainClass>
                     </manifest>
                 </archive>
             </configuration>
